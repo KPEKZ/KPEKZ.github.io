@@ -894,3 +894,60 @@ font-weight: 300;
     transform: translateX(-50%);
     color:dimgray;
 }
+
+.content-slider .formcontent
+{
+    position:absolute;
+    left: 50%;
+    top:30%;
+    transform: translateX(-50%);
+    border:1px solid black;
+    padding: 40px;
+    border-radius: 13px;
+}
+
+.content-slider .formcontent #Reg
+{
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.content-slider .formcontent p
+{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.content-slider .formcontent input
+{
+    width: 220px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.content-slider .formcontent input[type]
+{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 20px;
+}
+
+.content-slider .formcontent input[type]:focus
+{
+    background-color: black;;
+}
+
+.content-slider .map
+{
+    position: absolute;
+    left:50%;
+    top: 70%;
+    transform: translate(-50%,-50%);
+    
+}
