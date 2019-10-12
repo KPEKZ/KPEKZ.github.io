@@ -83,7 +83,7 @@ body
 
 .content-slider
 {
-    
+    position: relative;
     height: 539px;
     background-image: url(images/Layer_1.png);
     z-index: 0;
