@@ -1,0 +1,525 @@
+
+
+body
+{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif, serif;
+    background-color: lightskyblue;
+     
+}
+
+
+
+
+
+.container
+{
+    width: 100%;
+    height: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    border: 1px solid black;
+    
+    
+}
+
+div
+{
+    display: block;
+}
+
+
+
+.container .header
+{
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+   
+    width: 100%;
+    height: 7%;
+    background-image: url(images/headerbg.jpg);
+    background-size: auto;
+    
+
+}
+.header .menu #logo
+{
+    height: 110px;
+    
+
+    
+  
+}
+.header .menu
+{
+    position: relative;
+    margin:0;
+    padding:0;
+   list-style-type:none;
+    float:right;
+    right:50%;
+}
+
+
+.header .menu >li
+{
+    float:right;
+    position: relative;
+    right: -50%;
+}
+
+
+
+
+.header .menu >li a
+{
+    
+   display:block;
+    text-decoration: none;
+   margin-right: 1px;
+    padding: 15px; 
+    color:black;
+    font-weight:600;
+    font-family: 'Mansalva', cursive;
+
+    
+}
+
+
+.header .menu >li:last-child
+{
+    padding: 0;
+    margin:0;
+    bottom: 20px;
+}
+
+.header .menu >li>h2>a:hover
+{
+    color:white;
+    transition: 0.3s;
+}
+.header .menu>li>h2>a:active
+{
+    color:red;
+}
+
+
+.container .CenterContent
+{
+    padding: 0;
+    padding: 20px;
+    position: relative;
+    width: 90%;
+    height: 83%;
+    background-color: gainsboro;
+     font-family: 'Mansalva', cursive;
+    margin: auto;
+    top: 20px;
+    border-radius: 15px;
+    
+}
+
+
+
+.footer
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 10%;
+    outline: 2px solid gray;
+    position: relative;
+    background-image: url(images/headerbg.jpg);
+    top: 40px;
+    
+}
+
+.footer .footwrap
+{
+    position: absolute;
+    
+    width: inherit;
+    height: 25%;
+    background-image: url(images/headerbg.jpg);
+    background-size:0;
+    box-shadow: 0 0 0 128px rgba(0 , 0, 0, 0.43) inset;
+    
+    bottom: 0;
+    
+}
+.footer .footwr
+{
+    float: right;
+    position: relative;
+    right:50%;
+}
+
+.footer .footwr p
+{
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    font-family: 'Mansalva', cursive;
+    float: right;
+    right: -50%;
+    top:10px;
+    
+}
+
+
+
+
+
+
+
+h3
+{
+    text-align: center;
+    color:black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color:  #eaeaea;
+}
+
+
+
+
+.short_description
+{
+    color:#707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.additional_description
+{
+    color:#484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.list li
+{
+    list-style-image: url(images/pencil.gif);
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 20px;
+        
+}
+
+.list ul
+{
+    background-color: darkgray;
+}
+.img
+{
+    width: 200px;;
+    height: 240px;
+    /*padding: 5px;
+    background-color: darkblue;*/
+    
+    outline: 3px solid #666;
+  
+}
+
+.img:hover
+{
+    outline: inherit;
+}
+
+
+
+
+form .inp[type]
+{
+    width:20%;
+    height: auto;
+    color:blueviolet;
+    border: 2px solid black;
+    font-family: 'Mansalva', cursive;
+    font-size: 16px;
+    
+}
+
+.mainfield .inp[type]::placeholder
+{
+    text-align: center;
+    color:green;
+    font-family: 'Mansalva', cursive;
+    
+}
+
+.mainfield .field .inp
+{
+    text-transform: capitalize;
+}
+
+
+.mainfield .field :last-child:focus
+{
+    background-color: black;
+    color:yellow;
+}
+.mainfield .otp
+{
+    width: 20%;
+    height: 10%;
+    color:darkblue;
+    font-family: 'Mansalva', cursive;
+
+}
+
+
+
+
+
+
+textarea
+{
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 90%;
+    font-size: 20px;
+    color: green;
+   
+}
+
+
+
+form
+{
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.WrapForm
+{
+    position: relative;
+    margin: 0 auto;
+    width:inherit;
+   
+}
+
+
+.mainfield
+{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+.feature .table_samsung 
+{
+    width: auto;
+    height:auto;
+    border: 2px solid black;
+    border-collapse: collapse;
+    
+}
+.feature .table_samsung td
+{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+
+.feature .table_samsung tr h4
+{
+    text-align: center;
+}
+
+
+
+.feature .table_honor
+{
+    width: 80%;
+    height:600px;
+    margin: auto;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+.feature .table_honor td
+{
+    border: 2px solid black;
+    padding: 10px;
+     
+}
+
+.feature .table_honor td h4
+{
+    text-align: center;
+}
+
+.feature .table_xiaomi
+{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+
+
+.feature .table_xiaomi  td
+{
+     border: 2px solid black;
+    padding: 10px;
+}
+
+.feature .table_xiaomi td h4
+{
+    text-align: center;
+}
+
+.feature .globaltable
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.content p::first-letter
+{
+    font-size: 25px;
+    font-style: italic;
+}
+
+#map
+{
+    width: 100%;
+    height: 374px;
+}
+
+.fset
+{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .telephone
+{
+    
+    margin: 20px;;
+    padding: 0;
+    border:2px solid black;
+    height: 100%;
+   border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.products-wrapp
+{  
+    
+    position: relative;
+    list-style-type:none;
+    display: block;
+    width: inherit;
+    
+}
+
+
+.products-wrapp .imgcont
+{
+    height: 270px;
+    width: 200px;
+   display: block;
+    position: relative;
+    float: left;
+    border: 2px solid black;
+    text-decoration: none;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+
+.container .products-wrapp .imgcont img
+{
+    
+    position: relative;
+  display: block;
+    width: 100%;
+    height: 70%;
+    
+}
+
+.container .products-wrapp .imgcont .aproducts
+{
+    position: relative;
+     text-decoration: none;
+    width: 100%;
+    height: 10%;
+    display: block;
+    position: relative;
+    font-size: 20px;
+    background-color: darkred;
+    text-align: center;
+    border-radius: 20px;
+
+    margin-top: 25px;
+        color:black;
+    
+}
+
+.container .products-wrapp .imgcont .aproducts:hover
+{
+    
+    transition: 0.3s all ease;
+    color:white;
+    padding:  0 0 10px;
+}
+
+.samsblock
+{
+   
+    padding: 20px;
+    width: 25%;
+    position: relative;
+    float: left;
+    text-align: center;
+    height: 35%;
+   
+}
+.sams
+{
+    
+    
+    display: block;
+    position: relative;
+    
+}
+
+.samsblock .buy
+{
+    font-size: 20px;
+    margin: auto;
+    width: 40%;
+    position: relative;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.samsblock .buy:hover
+{
+    color: white;
+}
+
+.samsblock .buy:active
+{
+    background-color: darkslateblue;
+}
