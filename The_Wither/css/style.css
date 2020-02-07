@@ -22,7 +22,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: url("/image/background.jpg");
+  background-image: url("image/background.jpg");
   background-repeat: no-repeat;
   background-position: top right 20%;
 }
@@ -218,16 +218,16 @@ body {
 }
 
 .series-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 18, 24, 0.5)), to(#2D2D2D)), url("/image/series/series-1.jpg");
-  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("/image/series/series-1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 18, 24, 0.5)), to(#2D2D2D)), url("image/series/series-1.jpg");
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("image/series/series-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
 .series-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 18, 24, 0.5)), to(#2D2D2D)), url("/image/series/series-2.jpg");
-  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("/image/series/series-2.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 18, 24, 0.5)), to(#2D2D2D)), url("image/series/series-2.jpg");
+  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("image/series/series-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -237,7 +237,7 @@ body {
   width: 32px;
   height: 32px;
   border: none;
-  background-image: url("/image/arrow.svg");
+  background-image: url("image/arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: transparent;
