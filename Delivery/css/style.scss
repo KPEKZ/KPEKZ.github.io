@@ -1,72 +1,233 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
 }
 
-.container{
-   
+body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+}
+
+.container {
+
     max-width: 1200px;
     margin: auto;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-bottom: 40px;
 }
 
-.search-input{
+.input {
     background: #FFFFFF;
 
 
-border: 1px solid rgb(136, 96, 96);
+    border: 1px solid #D9D9D9;
 
-border-radius: 2px;
-height: 40px;
-width: 690px;
-font-size: 16px;
-line-height: 24px;
-background-image: url('../img/Home.svg');
-background-repeat: no-repeat;
-background-position: left 11px center;
-padding-left: 35px;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    padding-left: 35px;
+    background-position: left 11px center;
+    background-repeat: no-repeat;
 }
 
-.buttons{
+.input-address {
+
+
+    width: 690px;
+
+    background-image: url('../img/Home.svg');
+
+
+
+}
+
+.input-search {
+    background-image: url('../img/search.svg');
+    width: 300px;
+
+}
+
+.buttons {
     display: flex;
     align-items: center;
 
 }
-.button{
+
+.button {
     display: flex;
     align-items: center;
     padding: 8px 16px;
     background: #FFFFFF;
 
 
-border: 1px solid #D9D9D9;
-box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
 
-color: #595959;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
-border-radius: 2px;
-font-size: 16px;
-line-height: 24px;
+    color: #595959;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.button-primary{
+.button-primary {
     border: 1px solid #D9D9D9;
     background: #1890FF;
-    color:#FFF;
+    color: #FFF;
     margin-right: 10px;
 
 }
 
-.button-icon{
-    margin-right: 6px;
+.button-icon {
+    margin-right: 4px;
     vertical-align: middle;
 }
-.button-text{
+
+.button-text {
     vertical-align: middle;
+}
+
+.promo {
+    margin-bottom: 56px;
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #FFF1B8;
+    border-radius: 10px;
+    padding: 68px 70px;
+    background: #fff1b8 url('../img/promo-image.png') no-repeat top -150px right -200px/700px;
+
+}
+
+.promo-title {
+    font-style: normal;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+
+    color: #302C34;
+}
+
+.promo-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #302C34;
+    max-width: 538px;
+
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.section-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+}
+
+.card-image {
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 20px 23px 35px 23px;
+}
+
+.card-heading {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.card-tag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    background: #262626;
+    border-radius: 2px;
+    padding: 1px 8px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+
+    margin-right: 26px;
+    color: #ffc107;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.price,
+.category {
+    color: #8C8C8C;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.price {
+    margin-right: 10px;
+}
+
+.price:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background-color: #8C8C8C;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 10px;
 }
