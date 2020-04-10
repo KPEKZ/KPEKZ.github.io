@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delivery Food - Доставка еды на дом</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -15,7 +16,7 @@
     <div class="container">
         <!-- header -->
         <header class="header">
-            <a href="index.html" class="logo"><img src="img\logo.svg" alt="logo"></a>
+            <a href="index.html" class="logo animated fadeInLeft delay-1s"><img src="img\logo.svg" alt="logo"></a>
             
             <input type="text" class="input input-address" placeholder="Адрес доставки">
             <div class="buttons">
@@ -36,7 +37,7 @@
 <!-- container -->
     <main class="main">
         <div class="container">
-            <section class="promo">
+            <section class="promo wow fadeInUp" data-wow-delay="0.2s">
                 <h1 class="promo-title">Онлайн-сервис <br> Доставки еды на дом</h1>
                 <p class="promo-text">
                     Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
@@ -49,7 +50,7 @@
                     <input type="text" class=" input input-search" placeholder="Поиск блюд и ресторанов">
                 </div>
                 <div class="cards">
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.4s">
                         <img class="card-image" src="./img/image.jpg" alt="">
                         <div class="card-text">
                             <div class="card-heading">
@@ -66,7 +67,7 @@
                         </div>
                     </a>
                     <!-- /.card -->
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.5s">
                         <img class="card-image" src="./img/image2.jpg" alt="">
                         <div class="card-text">
                             <div class="card-heading">
@@ -83,7 +84,7 @@
                         </div>
                     </a>
                     <!-- /.card -->
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.6s">
                         <img class="card-image" src="./img/image3.jpg" alt="">
                         <div class="card-text">
                             <div class="card-heading">
@@ -100,7 +101,7 @@
                         </div>
                     </a>
                     <!-- /.card -->
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.4s">
                         <img class="card-image" src="./img/image4.jpg" alt="">
                         <div class="card-text">
                             <div class="card-heading">
@@ -117,7 +118,7 @@
                         </div>
                     </a>
                     <!-- /.card -->
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.5s">
                         <img class="card-image" src="./img/image5.jpg" alt="">
                         <div class="card-text">
                             <div class="card-heading">
@@ -134,7 +135,7 @@
                         </div>
                     </a>
                     <!-- /.card -->
-                    <a href="restaurant.html" class="card">
+                    <a href="restaurant.html" class="card wow fadeInUp" data-wow-delay="0.6s">
                         <img class="card-image" src="./img/6.jpg" alt="">
                         <div class="card-text">
                             <div class="card-heading">
@@ -168,14 +169,17 @@
                     <a href="#" class="footer-link">Контакты</a>
                 </nav>
                 <div class="social-links">
-                    <a href="#" class="social-link"><img src="img/instagram.svg" alt="instagram"></a>
-                    <a href="#" class="social-link"><img src="img/facebook.svg" alt="facebook"></a>
-                    <a href="#" class="social-link"><img src="img/vk.svg" alt="vk"></a>
+                    <a href="#" class="social-link zoomInUp" data-wow-delay="0.4s" ><img src="img/instagram.svg" alt="instagram"></a>
+                    <a href="#" class="social-link zoomInUp" data-wow-delay="0.5s" ><img src="img/facebook.svg" alt="facebook"></a>
+                    <a href="#" class="social-link zoomInUp" data-wow-delay="0.4s" ><img src="img/vk.svg" alt="vk"></a>
                 </div>
             </div>
         </div>
     </footer>
 
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
