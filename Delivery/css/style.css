@@ -110,6 +110,10 @@ body {
   background: #fff1b8 url("../img/promo-image.png") no-repeat top -150px right -200px/700px;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .promo-title {
   font-style: normal;
   font-style: normal;
