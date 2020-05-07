@@ -53,6 +53,10 @@ body {
 
 }
 
+.hide {
+    display: none;
+}
+
 .button {
     display: flex;
     align-items: center;
@@ -183,8 +187,12 @@ flex-basis: 31%;
 text-decoration: none;
 }
 
+.card-restarants {
+    cursor: pointer
+}
+
 .card-image {
-    width: 384px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
 }
@@ -194,7 +202,14 @@ text-decoration: none;
     object-fit: cover;
 }
 .card-text {
-    padding: 20px 23px 35px 23px;
+    padding: 20px 23px 35px;
+    min-height: 275px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reustarants .card-text {
+    min-height: auto;
 }
 
 .card-heading {
@@ -244,8 +259,9 @@ text-decoration: none;
 
 .card-buttons{
     display: flex;
-    align-items: center;
     margin-top: 24px;
+    flex-grow: 1;
+    align-items: flex-end;
 }
 
 .rating {
