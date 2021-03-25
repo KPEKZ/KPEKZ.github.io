@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+.header {
+  height: 220px;
+  padding: 60px 135px 50px 135px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header .header__h1 {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header .header__navigation {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header__navigation .navigation__item a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.preview {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 464px;
+  background-image: url("../images/Hotel-11.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.preview .preview__icon {
+  display: block;
+  margin: auto;
+}
+
+.preview .preview__header {
+  margin-top: 35px;
+  color: white;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 140px;
+}
+
+.preview .preview__description {
+  margin: auto;
+  text-align: center;
+  width: 456px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.reviews {
+  padding: 95px 135px 50px 135px;
+}
+
+.reviews .reviews__header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reviews .reviews__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews .reviews__cards .reviews__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 365px;
+  max-width: 365px;
+}
+
+.reviews .reviews__cards .reviews__card .card__header {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.reviews .reviews__cards .reviews__card .card__description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.reviews .reviews__cards .reviews__card .card__image {
+  width: 100%;
+}
+
+.season-ticket {
+  background-color: #F7F7F7;
+  mix-blend-mode: normal;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.season-ticket .season-ticket__rounded__header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
