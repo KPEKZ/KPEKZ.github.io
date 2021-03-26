@@ -23,7 +23,7 @@ html::-webkit-scrollbar {
 .header .header__h1 {
   font-family: 'Playfair Display';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 400;
   font-size: 35px;
   line-height: 47px;
   letter-spacing: 1px;
@@ -39,12 +39,14 @@ html::-webkit-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header .header__navigation .navigation__item a {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 2px;
@@ -97,6 +99,7 @@ html::-webkit-scrollbar {
 
 .reviews {
   padding: 95px 135px 50px 135px;
+  z-index: 1;
 }
 
 .reviews .reviews__header {
@@ -119,6 +122,7 @@ html::-webkit-scrollbar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 5;
 }
 
 .reviews .reviews__cards .reviews__card {
@@ -131,6 +135,7 @@ html::-webkit-scrollbar {
           flex-flow: column wrap;
   width: 365px;
   max-width: 365px;
+  z-index: 5;
 }
 
 .reviews .reviews__cards .reviews__card .card__header {
@@ -157,11 +162,28 @@ html::-webkit-scrollbar {
 }
 
 .season-ticket {
+  position: relative;
   background-color: #F7F7F7;
   mix-blend-mode: normal;
-  border-radius: 50%;
-  background-color: #fff;
   text-align: center;
+  z-index: 1;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.season-ticket::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 700px;
+  height: 700px;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .season-ticket .season-ticket__rounded__header {
@@ -172,5 +194,130 @@ html::-webkit-scrollbar {
   line-height: 20px;
   letter-spacing: 2px;
   color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.season-ticket .season-ticket__rounded__action {
+  width: 370px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.season-ticket .season-ticket__rounded__action .action__header {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.season-ticket .season-ticket__rounded__action .action_description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+}
+
+.season-ticket .season-ticket__button {
+  width: 170px;
+  height: 50px;
+  background-color: #FF7931;
+  outline: none;
+  color: #FFF;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.season-ticket .season-ticket__button p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 45px;
+  padding-left: 135px;
+  padding-right: 135px;
+  background-color: #575757;
+  z-index: 5;
+  margin-top: 50px;
+}
+
+.footer .footer__header {
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 35px;
+}
+
+.footer .footer__navigation {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 45px;
+}
+
+.footer .footer__navigation .navigation__item a {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer hr {
+  border: 0.1px solid white;
+}
+
+.footer .footer__socials {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footer__socials .social-wrap {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-right: 25px;
+  border-radius: 3px;
+  background: white;
+}
+
+.footer .footer__socials i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  vertical-align: center;
+  font-size: 25px;
+  color: #575757;
 }
 /*# sourceMappingURL=style.css.map */

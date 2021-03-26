@@ -21,7 +21,7 @@ html::-webkit-scrollbar{
 .header .header__h1{
     font-family: 'Playfair Display';
     font-style: normal;
-    font-weight: 900;
+    font-weight: 400;
     font-size: 35px;
     line-height: 47px;
     letter-spacing: 1px;
@@ -34,13 +34,14 @@ html::-webkit-scrollbar{
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
 @mixin item__link {
-    font-family: Roboto;
+    font-family: 'Roboto';
         font-style: normal;
-        font-weight: normal;
+        font-weight: 900;
         font-size: 15px;
         line-height: 18px;
         letter-spacing: 2px;
@@ -114,10 +115,12 @@ html::-webkit-scrollbar{
     flex-flow: column wrap;
     width: 365px;
     max-width: 365px;
+    z-index: 5;
 }
 
 .reviews{
     padding: 95px 135px 50px 135px;
+    z-index: 1;
 
     .reviews__header{
         font-family: 'Roboto';
@@ -134,7 +137,7 @@ html::-webkit-scrollbar{
     .reviews__cards{
         display: flex;
         justify-content: space-between;
-
+        z-index: 5;
     
         .reviews__card{
             @include card();
@@ -167,12 +170,28 @@ html::-webkit-scrollbar{
 }
 
 .season-ticket{
+    position: relative;
     background-color: #F7F7F7;
     mix-blend-mode: normal;
-
-    border-radius: 50%;
-    background-color: #fff;
     text-align: center;
+    z-index: 1;
+    padding-top:35px;
+    padding-bottom:35px;
+  
+
+    &::after{
+        content: "";
+        display: block;
+        position:  absolute;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 700px;
+        height: 700px;
+        top:50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%,-50%);
+    }
 
     .season-ticket__rounded__header{
         font-family: 'Roboto';
@@ -182,7 +201,123 @@ html::-webkit-scrollbar{
         line-height: 20px;
         letter-spacing: 2px;
         color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+
+       
+    }
+
+    .season-ticket__rounded__action{
+        width: 370px;
+        margin:auto;
+        margin-bottom:25px;
+
+        .action__header{
+            font-family: Playfair Display;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 23px;
+            line-height: 31px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .action_description{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            color: #000000;
+        }
+
     }
 
 
+    .season-ticket__button{
+        width: 170px;
+        height: 50px;
+        background-color: #FF7931;
+        outline:none;
+        color: #FFF;
+        border:none;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        p{
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+   
+
+}
+
+
+.footer{
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    padding-left: 135px;
+    padding-right: 135px;
+    background-color: #575757;
+    z-index: 5;
+    margin-top:50px;
+
+    .footer__header{
+        text-align: center;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 47px;
+        letter-spacing: 1px;
+        color:white;
+        margin-bottom: 35px;
+    }
+
+    .footer__navigation{
+        @include navigation();
+        .navigation__item{
+            
+            a{
+               @include item__link__theme_white();
+            }
+        }
+        margin-bottom: 45px;
+    }
+
+    hr{
+        border: 0.1px solid white;
+       }
+
+    .footer__socials{
+        margin-top: 40px;
+       display: flex;
+       justify-content: center;
+
+
+       .social-wrap{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin-right: 25px;
+        border-radius: 3px;
+        background: white;
+
+
+       }
+
+       i{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            vertical-align: center;
+           font-size:25px;
+            color: #575757;
+       }
+    }
 }
