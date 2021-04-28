@@ -64,6 +64,16 @@ html::-webkit-scrollbar{
         
         a{
            @include item__link__theme_black();
+            transition: all 0.2s;
+
+           &:hover{
+               border-radius: 7px;
+               border: 2px solid black;
+               padding: 15px;
+                transition: all 0.3s ease-in-out 0.02s;
+                background-color:black;
+                color: white;
+           }
         }
     }
 }
@@ -99,7 +109,7 @@ html::-webkit-scrollbar{
     .preview__description{
         margin: auto;
         text-align: center;
-        width: 456px;
+        width: 100%;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: normal;
@@ -114,7 +124,7 @@ html::-webkit-scrollbar{
     display: flex;
     flex-flow: column wrap;
     width: 365px;
-    max-width: 365px;
+    //max-width: 365px;
     z-index: 5;
 }
 
@@ -136,11 +146,13 @@ html::-webkit-scrollbar{
     }
     .reviews__cards{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         z-index: 5;
     
         .reviews__card{
             @include card();
+            
             .card__header{
                 font-family: 'Playfair Display';
                 font-style: normal;
@@ -149,6 +161,7 @@ html::-webkit-scrollbar{
                 color: #000000;
                 margin-top: 20px;
                 margin-bottom: 10px;
+                
             }
 
             .card__description{
@@ -208,12 +221,12 @@ html::-webkit-scrollbar{
     }
 
     .season-ticket__rounded__action{
-        width: 370px;
+        width: 100%;
         margin:auto;
         margin-bottom:25px;
 
         .action__header{
-            font-family: Playfair Display;
+            font-family: 'Playfair Display';
             font-style: normal;
             font-weight: 900;
             font-size: 23px;
@@ -244,6 +257,17 @@ html::-webkit-scrollbar{
         border:none;
         text-transform: uppercase;
         cursor: pointer;
+        box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        animation: btnIncrease 2s infinite ease-in-out;
+     
+        @keyframes btnIncrease {
+            50%{
+                transform: scale(1.5,1.5);
+            }
+            100%{
+                transform: scale(1,1);
+            }
+        }
 
         p{
             display: inline-block;
@@ -284,13 +308,38 @@ html::-webkit-scrollbar{
             
             a{
                @include item__link__theme_white();
+               transition: all 0.3s;
+               &:hover{
+                border-radius: 7px;
+                border: 2px solid rgb(66, 61, 61);;
+                padding: 15px;
+                 transition: all 0.3s ease-in-out 0.02s;
+                 background-color:rgb(66, 61, 61);;
+                 color: white;
+            }
             }
         }
         margin-bottom: 45px;
     }
 
-    hr{
+    .hr{
+        height: 2px;
+        display: block;
+        position: relative;
+        background-color: white;
+        width: 5%;
         border: 0.1px solid white;
+        animation: dashMove 2s  cubic-bezier(0.47,-0.44,0.49,1.46) infinite;
+
+        @keyframes dashMove {
+            0%{transform: translateX(100%);;}
+            50%{transform: translateX(1750%);}
+            100%{
+                transform: translateX(100%);
+            }
+            
+        }
+
        }
 
     .footer__socials{
@@ -306,11 +355,17 @@ html::-webkit-scrollbar{
         margin-right: 25px;
         border-radius: 3px;
         background: white;
+        box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        &:hover{
+            background-color: rgb(66, 61, 61);
+            i{
+                color:white;
 
+            }
+        }
 
-       }
-
-       i{
+        i{
+            transition: all 0.1s;
             position: absolute;
             top:50%;
             left:50%;
@@ -319,5 +374,89 @@ html::-webkit-scrollbar{
            font-size:25px;
             color: #575757;
        }
+
+       }
+
+     
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .header{
+        padding: 40px 80px 40px 80px;
+    }
+    .reviews{
+        padding: 95px 70px 95px 70px;
+        .reviews__header{
+            margin-bottom: 40px;
+        }
+    }
+
+    .footer{
+        padding: 40px 80px 40px 80px;
+    }
+}
+
+@media screen and(max-width :768px){
+    .header{
+        padding: 40px 30px 40px 30px;
+        .header__navigation li {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    }
+
+    .reviews{
+        .reviews__cards{
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .reviews__card{
+                text-align: center;
+                margin-bottom: 20px;
+                width: 100%;
+            }
+        }
+    }
+
+    .footer{
+        padding: 40px 30px 40px 30px;
+        .footer__navigation li {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and(max-width :576px){
+    .header{
+        height: auto;
+    }
+    .season-ticket{
+        font-size: 10px;
+    }
+    .season-ticket::after{
+        display: none;
+    }
+    .reviews{
+        padding: 95px 30px 95px 30px;
+        .reviews__cards{
+            flex-direction: column;
+            align-items: center;
+
+            .reviews__card{
+                width: 100%;
+            }
+        }
+    
+    }
+
+    .preview{
+        .preview__header{
+           width: 100%;
+           font-size: 190%;
+        }
     }
 }
