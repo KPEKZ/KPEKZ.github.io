@@ -191,7 +191,7 @@
 /*_________________HEADER_________________*/
 /*_________________PREVIEW-PAGE_________________*/
 .container .preview-page {
-  background-image: url("./../images/image.jpg.png");
+  background-image: url("./../images/image.jpg");
   background-size: cover;
   background-position: top center;
   padding-top: 250px;
