@@ -9,7 +9,7 @@ const anchorTeam = document.getElementById('fourthAnchor');
 
 let camera, scene, renderer, model;
 
-const loader = new GLTFLoader().setPath('/assets/models/');
+const loader = new GLTFLoader().setPath('/public/');
 
 function init() {
     scene = new THREE.Scene();
