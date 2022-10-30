@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Eduard Kopylov">
+    <meta name="description" content="It's the personal page that includes references to the lab's work and the team project">
+    <meta name="keywords" content="HTML, CSS, JavaScript, lab's work,">
+    <script src="https://kit.fontawesome.com/37885c58b7.js" crossorigin="anonymous"></script>
+    <script src="./scripts/app.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/page_icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Eduard Kopylov page</title>
+</head>
+    <body>
+        <main class="main">
+            <section id="lbs" class="labs">
+                <h1 class="labs__header">Eduard Kopylov reports' page</h1>
+                <div class="labs__chips">
+                    <a id="firstAnchor" href="#lb1" class="labs__chip" style="left:162px; top: 110px;">
+                        <h3 class="chip__header">Lab 1</h3>
+                    </a>
+                    <a id="secondAnchor" href="#lb2"  class="labs__chip" style="left:-30px; top: 30px;">
+                        <h3 class="chip__header">Lab 2</h3>
+                    </a>
+                    <a id="thirdAnchor" href="#lb3"  class="labs__chip" style="left: 30px; top: 30px;">
+                        <h3 class="chip__header">Lab 3</h3>
+                    </a>
+                    <a id="fourthAnchor" href="#team"  class="labs__chip" style="left: -162px; top: -50px">
+                        <h3 class="chip__header">Squad project</h3>
+                    </a>
+                </div>
+            </section>
+            <section class="description">
+                <h2 id="Labs_desc" class="description__header">Labs brief description</h2>
+                <div class="description__labs">
+                    <article class="lab" data-aos="fade-up-right">
+                        <h3 id="lb1">Lab 1</h3>
+                        <div class="lab__wrapper">
+                            <i class="fa-brands fa-github" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-solid fa-folder" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-solid fa-user-plus" data-aos="zoom-in" data-aos-delay="300"></i>
+
+                        </div>
+                        <p class="lab__desc">Registration on GitHub and creating a repository for hosting</p>
+                    </article>
+                    <hr>
+                    <article class="lab" data-aos="fade-up-left">
+                        <h3 id="lb2">Lab 2</h3>
+                        <div class="lab__wrapper">
+                            <i class="fa-brands fa-html5" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-brands fa-css3-alt" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-brands fa-js" data-aos="zoom-in" data-aos-delay="300"></i>
+                        </div>
+                        <p class="lab__desc">Creating a simple web app (page)</p>
+                    </article>
+                    <hr>
+                    <article class="lab" data-aos="fade-up-right">
+                        <h3 id="lb3">Lab 3</h3>
+                        <div class="lab__wrapper">
+                            <i class="fa-solid fa-network-wired" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-solid fa-database" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-solid fa-display" data-aos="zoom-in" data-aos-delay="300"></i>
+                        </div>
+                        <p class="lab__desc">Creating a local network for providing a data in Cisco</p>
+                    </article>
+                    <hr>
+                    <article class="lab" data-aos="fade-up-left">
+                        <h3 id="team">Team project</h3>
+                        <div class="lab__wrapper">
+                            <i class="fa-solid fa-people-group" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-solid fa-music" data-aos="zoom-in" data-aos-delay="300"></i>
+                            <i class="fa-sharp fa-solid fa-code-branch" data-aos="zoom-in" data-aos-delay="300"></i>
+                        </div>
+                        <p class="lab__desc">Creating web music app in team repository</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__description"> Eduard Kopylov from IDM-22-07 Group &copy;</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+
+        </script>
+    </body>
+</html>

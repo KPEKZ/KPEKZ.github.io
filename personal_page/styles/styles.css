@@ -1,0 +1,142 @@
+:root {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.labs {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+.labs__header {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  color: #FFF;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+}
+.labs__chips {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  top: 30%;
+}
+.labs__chips .labs__chip {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  border: 4px solid #FFF;
+  transform: rotateZ(45deg);
+  box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  animation: shadowPulse 2s ease-in-out 0s infinite;
+  background: rgba(240, 240, 247, 0.4);
+}
+.labs__chips .labs__chip:hover {
+  animation: rotationPulse 3s ease-in-out 0.3s 1;
+}
+.labs__chips .labs__chip .chip__header {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  color: #FFF;
+  transform: rotateZ(-45deg) translate(-10%, -100%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+.description {
+  background-color: #0d1317;
+  padding: 20px;
+}
+.description__header {
+  text-align: center;
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+}
+.description__labs {
+  margin-top: 40px;
+}
+.description__labs hr {
+  width: 60%;
+  margin: auto;
+}
+.description__labs .lab {
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 350px;
+}
+.description__labs .lab h3 {
+  text-align: center;
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+}
+.description__labs .lab__wrapper {
+  display: flex;
+  gap: 40px;
+}
+.description__labs .lab__wrapper i {
+  position: relative;
+  font-size: 6rem;
+  color: #FFF;
+  -webkit-transition: all 2s ease-in-out 0.5s;
+  transition: all 2s ease-in-out 0.5s;
+}
+.description__labs .lab__desc {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+}
+
+.footer {
+  padding: 20px;
+  height: 70px;
+  background-color: black;
+}
+.footer__description {
+  text-align: center;
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+}
+
+@keyframes shadowPulse {
+  from {
+    box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0px 0px 8px 12px rgba(255, 255, 255, 0.2);
+  }
+  to {
+    box-shadow: 0px 0px 8px 6px rgba(255, 255, 255, 0.2);
+  }
+}
+@keyframes rotationPulse {
+  from {
+    transform: rotateY(0deg) rotateZ(45deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateZ(45deg);
+  }
+  to {
+    transform: rotateY(0deg) rotateZ(45deg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
