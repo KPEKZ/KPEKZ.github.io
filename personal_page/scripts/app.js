@@ -9,7 +9,7 @@ const anchorTeam = document.getElementById('fourthAnchor');
 
 let camera, scene, renderer, model;
 
-const loader = new GLTFLoader().setPath('/assets/models');
+const loader = new GLTFLoader().setPath('/assets/models/');
 
 function init() {
     scene = new THREE.Scene();
@@ -28,7 +28,7 @@ function init() {
     labSection.appendChild(renderer.domElement);
 
 
-    loader.load('/assets/models/scene.gltf', function (gltf) {
+    loader.load('the_orange_tree.glb', function (gltf) {
         model = gltf;
         scene.add(model.scene);
     })
@@ -55,11 +55,6 @@ function onWindowResize() {
 }
 
 window.addEventListener('resize', onWindowResize, false);
-
-// setInterval(() => {
-//     anchorFirstLab.classList.toggle('animate__animated');
-//     anchorFirstLab.classList.toggle('animate__flip');
-// },5000)
 
 init();
 animate();
